@@ -1,0 +1,238 @@
+html {
+    display: flex;
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    height: 500vh;
+    width: 100%;
+    margin: 0;
+    padding:0;
+}
+
+#izquierda {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    height: 100%;
+    background-color: rgba(79, 79, 85, 0.233);
+}
+
+/* Parte central contiene header y cuerpo */
+#centro {
+    width:70%;
+    height: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+
+}
+
+header {
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+#cuerpo{
+    display: flex;
+    flex-direction: column;
+}
+/* -------------------------------------------------------------- */
+
+#derecha {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    height: 100%;
+    background-color: rgba(61, 61, 66, 0.295);
+}
+
+.container-1 {
+    display: flex;
+    padding-top: 15%;
+    padding-bottom: 5%;
+    flex-direction: row;
+    justify-content: center;
+    height: 50px;
+}
+
+
+
+#titulo {
+    display: flex;
+    height: 80%;
+    flex-direction: row;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2.5vw;
+}
+
+img {
+    font-size: 3.5vw;
+}
+
+.primera:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.primera {
+    overflow: hidden;
+}
+
+#subtitulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+h2 {
+    font-size: medium;
+}
+
+#carrousel {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+#carrousel>img {
+    width: 100%
+}
+
+.logo:hover {
+    filter: saturate(180%);
+}
+
+#titulo_botella {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+#botellas {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.foto_botella:hover {
+    -webkit-transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+}
+
+#titulo_botella_1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#botellas1 {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+#titulo_botella_2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#botellas_2 {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+#preparaciones {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    background-image: url(./logos/johnnie_walker_amarillo.svg);
+    background-repeat: repeat;
+    align-items: center;
+}
+
+
+
+#cocteles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.bloque{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.cocteles_1 {
+    height: 200px;
+}
+
+.cocteles_1:hover {
+    filter: saturate(180%);
+}
+
+p {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    bottom: 0px;
+    right: 0px;
+    background-color: rgb(240, 193, 66);
+}
+
+.contenedor {
+
+    position:relative;
+    bottom: 0px;
+    right: 0px;
+}
+
+
+@media screen and (max-width: 600px) {
+    header {
+        height: 5%;
+    }
+
+    .foto_botella {
+        height: 50px;
+    }
+
+    #subtitulo {
+        display: none;
+    }
+
+    .cocteles_1 {
+        height: 80px;
+    }
+
+    #cocteles{
+        flex-direction: column;
+    }
+
+}
